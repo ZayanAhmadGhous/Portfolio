@@ -19,19 +19,20 @@
   <div class="scan-line"></div>
 
   <div class="content">
+ 
     <nav>
       <div class="logo">[ MLOps.dev ]</div>
       <ul class="nav-links">
-        <li><a onclick="showSection('home')">Home</a></li>
-        <li><a onclick="showSection('skills')">Stack</a></li>
-        <li><a onclick="showSection('projects')">Projects</a></li>
-        <li><a onclick="showSection('experience')">Education</a></li>
-        <li><a onclick="showSection('contact')">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <!-- HOME -->
-    <section id="home" class="active">
+    <section id="home">
       <div class="hero">
         <div class="hero-label">// MLOps Engineer</div>
         <h1>ZAYAN<br><span>AHMAD</span><br>GHOUS.</h1>
@@ -42,29 +43,42 @@
           reliable at scale.
         </p>
         <div class="hero-actions">
-          <button class="btn-primary" onclick="showSection('projects')">View Projects</button>
-          <button class="btn-secondary" onclick="showSection('contact')">Get in Touch</button>
+          <!-- <button class="btn-primary" onclick="showSection('projects')">View Projects</button>
+          <button class="btn-secondary" onclick="showSection('contact')">Get in Touch</button> -->
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
         </div>
       </div>
 
     </section>
 
     <!-- SKILLS -->
+
+
     <section id="skills">
       <div class="skills-section">
         <div class="section-label">// Technical Stack</div>
         <h2 class="section-title">What I work with</h2>
+
         <div class="skills-grid">
+
           <div class="skill-card">
             <div class="skill-cat">Programming Languages</div>
+            <p class="skill-desc">
+              Building ML pipelines, backend APIs, and optimized algorithms.
+            </p>
             <div class="skill-tags">
-              <span class="tag">Python</span>
-              <span class="tag">C++</span>
-              <span class="tag">SQL</span>
+              <span class="tag">Python (ML, APIs)</span>
+              <span class="tag">C++ (DSA, Performance)</span>
+              <span class="tag">SQL (Data Handling)</span>
             </div>
           </div>
+
           <div class="skill-card">
             <div class="skill-cat">Exploratory Data Analysis</div>
+            <p class="skill-desc">
+              Data cleaning, visualization, and feature engineering for ML models.
+            </p>
             <div class="skill-tags">
               <span class="tag">Pandas</span>
               <span class="tag">NumPy</span>
@@ -72,27 +86,51 @@
               <span class="tag">Seaborn</span>
             </div>
           </div>
+
           <div class="skill-card">
             <div class="skill-cat">Artificial Intelligence</div>
+            <p class="skill-desc">
+              Developing and training machine learning and deep learning models.
+            </p>
             <div class="skill-tags">
               <span class="tag">Machine Learning</span>
               <span class="tag">Deep Learning</span>
+              <span class="tag">PyTorch</span>
             </div>
           </div>
 
           <div class="skill-card">
-            <div class="skill-cat">Current Learning</div>
+            <div class="skill-cat">MLOps & Deployment (Learning)</div>
+            <p class="skill-desc">
+              Currently learning model deployment, tracking, and scalable pipelines.
+            </p>
             <div class="skill-tags">
-              <span class="tag">APIs</span>
-              <span class="tag">MLFlow</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">MLflow</span>
               <span class="tag">Docker</span>
               <span class="tag">Kubeflow</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-cat">Tools & Platforms</div>
+            <p class="skill-desc">
+              Version control, experimentation, and data visualization tools.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Jupyter</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Tableau</span>
             </div>
           </div>
 
         </div>
       </div>
     </section>
+
 
     <!-- PROJECTS -->
     <section id="projects">
@@ -162,7 +200,8 @@
               <!-- CHECKING -->
 
               <div class="project-links">
-                <a href="https://github.com/ZayanAhmadGhous/Student_Fee_managment_using_Django_with_login" target="_blank">
+                <a href="https://github.com/ZayanAhmadGhous/Student_Fee_managment_using_Django_with_login"
+                  target="_blank">
                   GitHub Repo
                 </a>
               </div>
@@ -280,7 +319,7 @@
               <span class="contact-value">github.com/ZayanAhmadGhous</span>
             </div>
           </a>
-          <a class="contact-link" href="cv.pdf" target="_blank">
+          <a class="contact-link" href="resume.pdf" target="_blank">
             <div class="contact-icon">cv</div>
             <div class="contact-text">
               <span class="contact-label">Resume</span>
@@ -293,14 +332,7 @@
     </section>
   </div>
 
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(function (s) {
-        s.classList.remove('active');
-      });
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
+
 
 </body>
 

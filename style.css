@@ -4,6 +4,23 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
 body {
     background: #0a0e1a;
     color: #c8d6f0;
@@ -94,7 +111,7 @@ nav {
 }
 
 section {
-    display: none;
+    display: block;
 }
 
 section.active {
@@ -277,6 +294,13 @@ section.active {
     text-transform: uppercase;
     margin-bottom: 0.8rem;
     opacity: 0.7;
+}
+
+.skill-desc {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 8px 0 12px;
+  line-height: 1.4;
 }
 
 .skill-tags {
